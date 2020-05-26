@@ -1,0 +1,422 @@
+body
+{
+	/*wyzerowanie marginesów i paddingu na całej stronie*/
+	margin: 0px;
+	padding: 0px;
+	/*ustalenie czcionki na opensans w całym dokumencie*/
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2
+{
+	font-family: 'Balsamiq Sans', cursive;
+	color: #FFB6C1;
+}
+
+div.logo
+{
+	/*padding tylko u góry i na dole, aby był odstęp*/
+	padding: 10px 0px 10px 0px;
+	display: block;
+	/*ustalenie logo na środku u góry*/
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+nav 
+{
+	/*marginesy (bardziej widoczne przy mniejszym rozmiarze)*/
+	margin: 10px;
+}
+
+nav a 
+{
+	/*ustalenie poziomego nava, odstępy pomiędzy linkami, bez kropek*/
+	display: block;
+	text-decoration: none;
+	padding: 0px 10px 0px 10px;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 60px;
+	text-align: center;
+}
+
+nav ul
+{
+	/* margin i padding nie jest tu potrzebny, jest w nav*/
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	position: relative;
+	text-align: center;
+}
+
+/*tworzenie listy wysuwanej*/
+nav ul li
+{
+	margin: 0px 30px 0px 30px;
+	display: inline-block;;
+}
+
+nav ul ul
+{
+	display: none;
+	position: absolute;
+	top: 100%;
+	z-index: 1;
+}
+
+nav ul ul li
+{
+	background-color: white;
+	min-width: 100px;
+	display: list-item;
+}
+
+nav ul li:hover > ul
+{
+	display: block;
+}
+
+nav a:hover 
+{
+	background-color: pink;
+	color: white;
+}
+
+/*do czyszczenia float*/
+.end
+{
+	clear: both;
+}
+
+/*koniec tworzenia listy wysuwanej*/
+/*wysuwany boczny panel z social media*/
+
+#panel 
+{
+	width: 60px;
+	background-color: pink; 
+	padding: 20px 20px 0 20px;
+	position: absolute;
+	left: -92px;
+	z-index: 1;
+}
+
+#panel img 
+{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+/*slajder i zdjęcia*/
+
+.pierwsza
+{
+	margin: 10px;
+}
+
+
+#slideshow 
+{
+	float: left;
+	width: 50%;
+	height: 460px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+	position: relative;
+	z-index: 0;
+}
+
+#slideshow > div 
+{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+}
+
+#slideshow img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.tekst
+{
+	float: left;
+	width: 35%;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	font-size: 20px;
+}
+
+hr
+{
+	border: 1px solid pink;
+	background-color: pink;
+}
+
+/* section druga, część article*/
+
+.druga
+{
+	margin: 10px;
+}
+
+article 
+{
+	padding-top: 10px;
+	float: left;
+	width: 55%
+}
+
+article h2
+{
+	margin-left: 30px;
+	margin-bottom: 0px;
+}
+
+.partImg img
+{
+
+	width: 95%;
+	height: 400px;
+}
+
+.part
+{
+	margin-left: 10px;
+	float: left;
+	background-color: #fff;
+	padding: 10px 20px 10px 20px;
+	margin-top: 20px;
+} 
+
+.part p
+{
+	width: 95%;
+}
+
+.part hr
+{
+	float: left;
+	width: 90%;
+}
+
+/*część aside*/ 
+
+aside
+{
+	padding: 10px 0px 10px 10px;
+	float: left;
+	width: 43%;
+}
+
+aside img
+{
+	width: 300px;
+	padding-right: 10px;
+	height: 200px;
+}
+
+#top_left
+{
+	float: left;
+}
+
+#top_right
+{
+	float: left;
+}
+
+#middle_left
+{
+	float: left;
+}
+
+#middle_right
+{
+	float: left;
+}
+
+#bottom_left
+{
+	float: left;	
+}
+
+#bottom_right
+{
+	float: left;	
+}
+
+aside a
+{
+	text-decoration: none;
+	font-weight: lighter;
+	font-size: 18px;
+	color: black;
+	text-align: center;
+}
+
+aside a:hover
+{
+	color: pink;
+}
+
+section 
+{
+	overflow: hidden;
+}
+
+/*stopka*/
+
+footer 
+{
+	padding: 20px 40px 20px 40px;
+ 	background-color: #ddd;
+ 	margin-top: 20px;
+}
+
+div#news
+{
+	display: block;
+	float: left;
+	width: 30%;
+}
+
+input[type=text]
+{
+ 	display: block;
+ 	padding: 5px;
+ 	margin-bottom: 10px;
+}
+
+label
+{
+ 	font-size: 14px;
+}
+		
+input[type=submit]
+{
+ 	display: block;
+	width: 150px;
+	margin-top: 10px;
+ 	padding: 10px;
+ 	background-color: pink;
+ 	color: white;
+}
+
+input[type=submit]:hover 
+{
+  opacity: 0.7;
+}
+
+div#else
+{
+	display: block;
+	float: left;
+	width:30%;
+}
+
+#else a
+{
+	text-decoration: none;
+	color: black;
+}
+
+#else a:hover
+{
+	color: pink;
+}
+
+#else ul
+{
+	list-style-image: url("zdjecia/heart.png"); 
+}
+
+div#me
+{
+	float: right;
+	width: 120px;
+}
+
+#me img
+{
+	height: 150px;
+	width: 100px;
+}
+
+/*responsywność*/
+
+@media (max-width: 1000px) 
+{
+article, aside 
+{
+	width: 100%; 
+	padding: 10px;
+}
+
+.tekst
+{
+	float: none;
+	width: 90%;
+}
+
+#slideshow
+{
+	width: 90%;
+}
+
+div#me
+{
+	display: none;
+}
+
+div#else
+{
+	float: right;
+}
+}
+
+@media (max-width: 500px) 
+{
+nav a 
+{
+	float: none;
+	width: 100%;
+}
+
+.tekst
+{
+	float: none;
+	width: 90%;
+}
+
+#slideshow
+{
+	width: 100%;
+}
+
+#slideshow img
+{
+	width: 80%;
+	height: 80%;
+}
+
+div#else
+{
+	float: right;
+}
+
+div#me
+{
+	display: none;
+}
+} 
+
